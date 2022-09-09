@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 //components
 import { ListComponent } from './pages/list/list.component';
 import { AddComponent } from './pages/add/add.component';
-import { EditComponent } from './pages/edit/edit.component';
 import { SearchComponent } from './pages/search/search.component';
 import { HeroComponent } from './pages/hero/hero.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -23,7 +22,7 @@ const routes : Routes = [
       },
       {
         path: 'edit/:id',
-        component: EditComponent
+        component: AddComponent
       },
       {
         path: 'search',

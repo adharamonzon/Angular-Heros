@@ -1,27 +1,15 @@
-# 05Layload
+# Aplicación de super héroes con Angular
+Este proyecto se ha creado con **Angular CLI** 
+Para  poder levantar el proyecto desde un servidor local, deben primero clonarse el repositorio con el siguiente comando: 
+  *git clone https://github.com/adharamonzon/Angular-Heros.git*
+Después se deben instalar el respositorio en local: 
+  *npm install*
+Para lanzar el servidor utilizar el comando *ng serve* que lanzara la aplicación en la dirección *`http://localhost:4200/`*
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+Este proyecto es una actividad para afianzar conocimientos básicos y avanzados de Angular. 
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Router
+Esta aplicación usa rutas para navigar entre los distintos componentes. Estas rutas se cargan con un lazyload. Por un lado se carga la página principal y el módlulo de error si no encuentra la url. En ésta página hay una lista con los enlaces a los distintos módulos del código que sólo se cargan cuando se accede ea ellos. 
+# Componentes 
+La aplicación está dividida en componentes pequeños, para que sea manejable, escalable y reutilizable. 
+Hay componentes generales, como por ejemplo una página de error si no se encuentra la url y páginas relacionadas con los héroes. Todos los componentes relacionados con los héroes se instancian en  se instancia en el archivo *heroe.module.ts* que éste a su vez se instancia en *app.module.ts*.

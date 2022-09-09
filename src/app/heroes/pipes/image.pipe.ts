@@ -2,9 +2,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Heroe } from '../interface/interface';
 
 @Pipe({
-  name: 'image'
+  name: 'image',
+  pure: false
 })
-
+//el pure al ponerlo en false, cada vez que haya un cambio se va a procesar.
 export class ImagePipe implements PipeTransform {
 
   transform(heroe: Heroe): string {   

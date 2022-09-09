@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Heroe } from '../interface/interface';
+import { Heroe } from '../../interface/interface';
 
 @Component({
   selector: 'app-heroe-card',
